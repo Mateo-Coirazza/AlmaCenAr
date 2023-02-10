@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+    <!--link de css bootstrap-->
+    <link rel="stylesheet" href="../css/css/bootstrap.min.css">
     <!-- Link de mi css-->
     <link rel="stylesheet" href="../css/main.css">
     <title>Contacto - AlmaCenAr</title>
@@ -38,30 +40,39 @@
     </header>
 
     <!-- contenido principal-->
-    <main>
+    <main class="d-flex justify-content-center">
+        <div class="card col-sm-6 p-3">
         <h1>Contacto</h1>
         <form>
             <fieldset class="marco">
-                <legend>Complta tus datos para contactarnos</legend>
-                <div>
-                    <label for="nombre_apellido">Nombre Apellido </label>
-                    <input type="text" name="nombre_apellido" placeholder="Nombre Apellido">
+                <legend>Compelta tus datos para contactarnos</legend>
+                <div class="mb-2">
+                    <label for="nombre y apellido">Nombre y apellido </label>
+                    <input type="text" class="form-control" name="nombre y apellido" placeholder="Nombre y apellido">
                 </div>
     
-                <div>
+                <div class="mb-2">
                     <label for="celular">Celular </label>
-                    <input type="number" name="celular" placeholder="celular">
+                    <input type="number" class="form-control" name="celular" placeholder="celular">
                 </div>
     
-                <div>
+                <div class="mb-2">
                     <label for="email">Email </label>
-                    <input type="email" name="email" placeholder="completa@tuemail.com">
+                    <input type="email" class="form-control" name="email" placeholder="completa@tuemail.com">
+                </div>
+
+                <div class="mb-2">
+                    <label for="mensaje">Mensaje </label>
+                    <textarea name="mensaje" id="mensaje" class="form-control" placeholder="hola"></textarea>
+                </div>
+
+                <div class="mb-2">
+                    <button class="btn btn-primary">Enviar</button>
                 </div>
     
-                <input type="submit">
-                <input type="reset">
             </fieldset>
         </form>
+        </div>
     </main>
 
      <!--pie de pagina-->
@@ -75,5 +86,7 @@
         </a>
         <h3>Todos los derechos reservados</h3>
     </footer>
+    <!--link de mi js-->
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
