@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 /* estilos genericos*/
@@ -12,6 +13,7 @@ body{
     background-color: lightgreen;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
+
 }
 
 /*estilos de home*/
@@ -21,15 +23,22 @@ body{
 header{
     background-color:rgb(224, 245, 224) ;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    min-width: 300px;
+    margin-bottom: 0px ;
 }
 
+
 header nav ul{
-    list-style: none;
-    display: flex;
-    gap: 1.3rem;
+    list-style:none;
+    display: inline-flex;
+    gap: 20px;;
     font-weight: lighter;
+    flex-wrap: wrap;
+    min-width: 300px;
+    margin-bottom: 0px;
 }
 
 /*estilos de main*/
@@ -60,7 +69,13 @@ main{
 footer{
     margin: 0,6rem;
     text-align: center;
-    background-color: rgb(224, 245, 224);   
+    background-color: rgb(224, 245, 224);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 300px;
+    margin-bottom: 0px ;   
 }
 
 
