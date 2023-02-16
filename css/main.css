@@ -13,7 +13,7 @@ body{
     background-color: lightgreen;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
-
+    overflow-x: hidden;
 }
 
 /*estilos de home*/
@@ -28,6 +28,7 @@ header{
     align-items: center;
     min-width: 300px;
     margin-bottom: 0px ;
+    overflow-x: hidden;
 }
 
 
@@ -54,6 +55,7 @@ main{
     display: grid;
     gap: 1rem;
 
+
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 33%);
 }
@@ -64,18 +66,31 @@ main{
     display: none;
 }
 
+.img-logo{
+    height: auto;
+    width: auto;
+    max-height: 225px;
+    max-width: 225px ;
+}
+
+
 /*estilos de footer*/
+
+.img-footer{
+    height: auto;
+    width: auto;
+    max-height: 100px;
+    max-width: 100px;
+}
 
 footer{
     margin: 0,6rem;
     text-align: center;
     background-color: rgb(224, 245, 224);
-    display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
-    min-width: 300px;
-    margin-bottom: 0px ;   
+    overflow-x: hidden;
+    display: flex;
 }
 
 
@@ -116,7 +131,7 @@ footer{
 }
 
 /*mq de tablet*/
-@media screen and (min-width:600px){
+@media screen and (min-width:768px){
     header nav ul li:hover{
         border-bottom: 1px solid black;
         list-style: none;  
