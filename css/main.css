@@ -1,185 +1,137 @@
-/* reset*/
+/*reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-}
+.marco {
+  border: none;
+  line-height: 1.5cm;
+  color: white; }
 
 /* estilos genericos*/
-
-body{
-    background-color: lightgreen;
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-    overflow-x: hidden;
-}
+body {
+  background-color: lightgreen;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  overflow-x: hidden; }
 
 /*estilos de home*/
-
 /*estilos de header*/
-
-header{
-    background-color:rgb(224, 245, 224) ;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    min-width: 300px;
-    margin-bottom: 0px ;
-    overflow-x: hidden;
-}
-
-
-header nav ul{
-    list-style:none;
+header {
+  background-color: #e0f5e0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 300px;
+  margin-bottom: 0px;
+  overflow-x: hidden; }
+  header nav ul {
+    list-style: none;
     display: inline-flex;
-    gap: 20px;;
+    gap: 20px;
     font-weight: lighter;
     flex-wrap: wrap;
     min-width: 300px;
-    margin-bottom: 0px;
-}
+    margin-bottom: 0px; }
 
 /*estilos de main*/
-main div img{
+main {
+  height: 70vh;
+  margin: 1rem 3rem 3rem 3rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 33%); }
+  main div img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-}
-
-main{
-    height: 70vh;
-    margin: 1rem 3rem 3rem 3rem;
-    display: grid;
-    gap: 1rem;
-
-
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 33%);
-}
+    object-fit: cover; }
 
 /*estilos de las clases main*/
+.img-frutillas, .img-campo {
+  display: none; }
 
-.img-frutillas, .img-campo{
-    display: none;
-}
-
-.img-logo{
-    height: auto;
-    width: auto;
-    max-height: 225px;
-    max-width: 225px ;
-}
-
+.img-logo {
+  height: auto;
+  width: auto;
+  max-height: 225px;
+  max-width: 225px; }
 
 /*estilos de footer*/
+footer {
+  margin: 0,6rem;
+  text-align: center;
+  background-color: #e0f5e0;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  overflow-x: hidden;
+  display: flex; }
 
-.img-footer{
-    height: auto;
-    width: auto;
-    max-height: 100px;
-    max-width: 100px;
-}
-
-footer{
-    margin: 0,6rem;
-    text-align: center;
-    background-color: rgb(224, 245, 224);
-    flex-wrap: wrap;
-    justify-content: space-around;
-    overflow-x: hidden;
-    display: flex;
-}
-
+/*clases de footer*/
+.img-footer {
+  height: auto;
+  width: auto;
+  max-height: 100px;
+  max-width: 100px; }
 
 /*estilos de sobreNosotros*/
-
-
 /*clase del main*/
-.texto{
-    text-align: center;
-}
+.texto {
+  text-align: center; }
 
 /*id del main*/
-#verduras{
-    justify-content:center;
-    width: 100%;
-}
+#verduras {
+  justify-content: center;
+  width: 100%; }
 
 /*estilos de tienda*/
-
 /*clases de main*/
-.productos{
-    text-align: start;
-    text-decoration: solid;
-}
+.productos {
+  text-align: start;
+  text-decoration: solid; }
 
 /*estilos de informacion*/
-
-.lista{
-    list-style: none;
-    line-height: 1.5cm
-}
+.lista {
+  list-style: none;
+  line-height: 1.5cm; }
 
 /*estilos de contacto*/
-
-.marco{
-    border: none;
-    line-height: 1.5cm;
-}
+.marco {
+  border: none;
+  line-height: 1.5cm; }
 
 /*mq de tablet*/
-@media screen and (min-width:768px){
-    header nav ul li:hover{
-        border-bottom: 1px solid black;
-        list-style: none;  
-        font-weight: lighter;
-    }
-
-    main{
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 50%);
-    }
-
-    .img-frutillas, .img-quinoa{
-        grid-row: span 1;
-    }
-
-    .img-verduras{
-        grid-column: span 2;
-        transition: 3s;
-    }
-
-    .img-verduras:hover{
-        transform: scale(0.8);
-        opacity: 70%;
-        transition: 3s;
-    }
-}
+@media screen and (min-width: 768px) {
+  header nav ul li:hover {
+    border-bottom: 1px solid black;
+    list-style: none;
+    font-weight: lighter; }
+  main {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 50%); }
+  .img-frutillas, .img-quinoa {
+    grid-row: span 1; }
+  .img-verduras {
+    grid-column: span 2;
+    transition: 3s; }
+  .img-verduras:hover {
+    transform: scale(0.8);
+    opacity: 70%;
+    transition: 3s; } }
 
 /*mq de desktop*/
-
-@media screen and (min-width:1024px){
-    main .img-frutillas, .img-campo{
-        display: block;
-    }
-
-    main{
-        grid-template-columns: (3, 1fr);
-        grid-template-rows: 40% 40% 20%;
-    }
-    .img-frutillas, .img-quinoa{
-        grid-row: span 2;
-    }
-
-    .img-palta, .img-verduras{
-        grid-row: span 1;
-        grid-column: span 1 ;
-    }
-
-    .img-campo{
-        grid-column: span 3;
-    }
-}
+@media screen and (min-width: 1024px) {
+  main .img-frutillas, .img-campo {
+    display: block; }
+  main {
+    grid-template-columns: 3, 1fr;
+    grid-template-rows: 40% 40% 20%; }
+  .img-frutillas, .img-quinoa {
+    grid-row: span 2; }
+  .img-palta, .img-verduras {
+    grid-row: span 1;
+    grid-column: span 1; }
+  .img-campo {
+    grid-column: span 3; } }

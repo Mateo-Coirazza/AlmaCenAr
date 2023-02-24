@@ -1,0 +1,10 @@
+//variable
+
+@import "../utilidades/variables";
+@import "../utilidades/listas";
+
+.marco{
+    border: none;
+    line-height: 1.5cm;
+    color: nth($list: $colores, $n:3 );
+}
